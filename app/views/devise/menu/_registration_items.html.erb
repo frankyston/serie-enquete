@@ -1,0 +1,9 @@
+<% if user_signed_in? %>
+  <li>
+  <%= link_to('Editar conta', edit_user_registration_path) %>
+  </li>
+<% else %>
+  <li>
+  <%= link_to('Criar conta', new_user_registration_path) %>
+  </li>
+<% end %>
